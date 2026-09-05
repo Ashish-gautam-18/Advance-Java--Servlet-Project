@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<center>
+<br>
+<br>
+	<h1>Registration Page</h1>
+	<br>
+	<br>
+</center>
+</head>
+<style>
+   
+form {
+	margin-top: 10px;
+	background-color: rgb(255, 255, 128);
+	padding: 20px;
+	margin-left: 380px;
+	width: 400px;
+	border-radius: 50px;
+	border: 3px blue solid;
+}
+
+h1 {
+	text-align: center;
+	font-size: 40px;
+	font-family: bold;
+	color: #ff1a75;
+}
+
+a {
+	font-size: 20px;
+}
+
+body {
+	background-color: rgb(0, 255, 255);
+}
+
+input {
+	font-size: 12px;
+	font-family: "Arial Black";
+	color: rgb(51, 61, 209);
+}
+
+label {
+	font-size: 15px;
+	font-family: "Arial Black";
+	color:rgb(14, 2, 52);
+}
+
+a {
+	text-align: center;
+}
+</style>
+<body>
+
+	<div align="CENTER">
+		<table>
+			<form method="post" action="./RegistrationServlet">
+				<tr>
+					<td><label>Email:</label></td>
+					<td><input type="text" placeholder="Enter Email" name="email"></td>
+				</tr>
+				<tr>
+					<td><label>User name:</label></td>
+					<td><input type="text" placeholder="Enter Username"
+						name="username"></td>
+				</tr>
+				<tr>
+					<td><label>Password:</label></td>
+					<td><input type="password" placeholder="Enter Password"
+						name="password"></td>
+				</tr>
+				<tr>
+					<td><label>Number:</label></td>
+					<td><input type="text" placeholder="Enter Mobile Number"
+						name="number"></td>
+				</tr>
+				<tr>
+					<td><label>Qualification:</label></td>
+					<td><input type="checkbox" name="qualification" value="BSC">
+						<label>BSC</label> <input type="checkbox" name="qualification"
+						value="MSC"> <label>MSC</label> <input type="checkbox"
+						name="qualification" value="B.tech"> <label>B.tech</label>
+						<input type="checkbox" name="qualification" value="M.tech">
+						<label>M.tech</label> <input type="checkbox" name="qualification"
+						value="B.com"> <label>B.com</label> <input type="checkbox"
+						name="qualification" value="M.com"> <label>M.com</label> <input
+						type="checkbox" name="qualification" value="BCA"> <label>BCA</label>
+						<input type="checkbox" name="qualification" value="MCA"> <label>MCA</label>
+				</tr>
+				<tr>
+					<td><label>Gender:</label></td>
+					<td><input type="radio" name="gender" value="Male"> <label>Male</label>
+						<input type="radio" name="gender" value="Female"> <label>Female</label></td>
+				</tr>
+				<tr>
+					<td><label>Technologies:</label></td>
+					<td><select name="technologies" size="3" multiple>
+							<option value="C">C</option>
+							<option value="C++">C++</option>
+							<option value="python">python</option>
+							<option value="java">java</option>
+							<option value=".net">.net</option>
+							<option value="spring">spring</option>
+							<option value="springboot">springboot+</option>
+							<option value="microservices">microservices</option>
+							<option value="mongodb">mongodb</option>
+							<option value="datastructure">datastructure</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td><label>Country:</label></td>
+					<td><select name="country">
+							<option value="India">India</option>
+							<option value="Australia">Australia</option>
+							<option value="Afganistan">Afganistan</option>
+							<option value="Africa">Africa</option>
+							<option value="Pakistan">Pakistan</option>
+							<option value="Bhutan">Bhutan</option>
+							<option value="USA">USA</option>
+							<option value="China">China</option>
+							<option value="London">London</option>
+							<option value="Germany">Germany</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td><label>Address:--</label></td>
+				</tr>
+				<tr>
+					<td><label>Door No.:</label></td>
+					<td><input type="text" placeholder="Enter door no."
+						name="address"></td>
+				</tr>
+				<tr>
+					<td><label>Street:</label></td>
+					<td><input type="text" placeholder="Enter Street"
+						name="address"></td>
+				</tr>
+				<tr>
+					<td><label>State:</label></td>
+					<td><input type="text" placeholder="Enter State"
+						name="address"></td>
+				</tr>
+				<tr>
+					<td><label>Pincode:</label></td>
+					<td><input type="text" placeholder="Enter Pincode"
+						name="address"></td>
+				</tr>
+				<tr>
+					<td><label>Comment:</label></td>
+					<td><textarea name="review" rows="4" cols="50"></textarea></td>
+				</tr>
+				<tr>
+					<center>
+						<td><a href="Home.html"><input type="button" value="Home"></a></td>
+					</center>
+					<td><input type="submit" value="Register" class=" btn-success"></td>
+				</tr>
+
+			</form>
+
+		</table>
+
+	</div>
+
+</body>
+</html>

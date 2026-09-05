@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+</head>
+<style>
+h1 {
+	text-align: center;
+	font-size: 40px;
+	font-family: bold;
+	color: #ff1a75;
+    border: 1px solid rgb(69, 7, 40);
+    background-image:url("project8.jpeg");
+    height: 60px;
+    
+}
+
+form {
+    background-color:aquamarine;
+	
+	background-color:rgba(184, 4, 4, 0.5);
+	padding: 20px;
+	border-radius: 20px;
+	margin-top: 12%;
+	width: 50%;
+}
+
+center {
+	font-size: 15px;
+	font-family: "Arial Black";
+	color: blue;
+}
+
+body {
+	background-image: url("project8.jpeg");
+	background-size:cover;
+background-position: center;
+
+	
+}
+</style>
+<body bgcolor="pink">
+<center>
+	<h1>Login Page</h1>
+	<form method="post" action="./LoginServlet">
+		User name : <input type="text" name="username" /> <br>
+		<br> Password : <input type="password" name="password" /> <br>
+		<br> <input type="submit" value="login" class=" btn-success">
+		<input type="reset" value="clear" class=" btn-danger">
+		&nbsp;&nbsp;<a
+			href="Home.html"><input type="button" value="Home"></a> <br>
+		<br>
+	</form>
+	<br>
+	<br>
+	</center>
+</body>
+</html>
